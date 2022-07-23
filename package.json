@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Krystian Kościelniak <krystian@koscielniak.pro>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-html-parser": "^5.3.3"
+  }
 }
