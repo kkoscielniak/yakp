@@ -1,5 +1,5 @@
 import { parse, HTMLElement } from 'node-html-parser';
-import { ClassesEnum, Highlight, KindleNotebook, QuerySelectorsEnum } from '../models/kindle';
+import { ClassesEnum, Highlight, Notebook, QuerySelectorsEnum } from '../models/kindle';
 
 
 
@@ -37,8 +37,8 @@ export default class HtmlParser {
     return div.removeWhitespace().structuredText.trim();
   }
 
-  parseHtml(): KindleNotebook {
-    let notebook: KindleNotebook = {
+  parse(): Notebook {
+    let notebook: Notebook = {
       title: this.parseMetadata(QuerySelectorsEnum.TITLE),
       authors: this.parseMetadata(QuerySelectorsEnum.AUTHORS),
       highlights: [],
