@@ -6,8 +6,9 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "nodemon ./src/index.ts",
-    "dist": "tsc -p .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "npx tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "yarn dist"
   },
   "author": "Krystian Kościelniak <krystian@koscielniak.pro>",
   "license": "MIT",
@@ -21,5 +22,8 @@
   },
   "compilerOptions": {
     "module": "CommonJS"
+  },
+  "repository": {
+    "url": "https://github.com/kkoscielniak/yakp"
   }
 }
