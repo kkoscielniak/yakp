@@ -9,3 +9,15 @@ export interface Highlight {
   location: number;
   text: string;
 }
+
+export enum QuerySelectorsEnum {
+  TITLE = 'div.bookTitle',
+  AUTHORS = 'div.authors',
+}
+
+export enum ClassesEnum {
+  NOTE_HEADING = 'noteHeading',
+  NOTE_TEXT = 'noteText',
+}
+
+// TODO: ColorsEnum

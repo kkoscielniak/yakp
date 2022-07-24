@@ -1,15 +1,7 @@
 import { parse, HTMLElement } from 'node-html-parser';
-import { Highlight, KindleNotebook } from '../models/kindle';
+import { ClassesEnum, Highlight, KindleNotebook, QuerySelectorsEnum } from '../models/kindle';
 
-enum QuerySelectorsEnum {
-  TITLE = 'div.bookTitle',
-  AUTHORS = 'div.authors',
-}
 
-enum ClassesEnum {
-  NOTE_HEADING = 'noteHeading',
-  NOTE_TEXT = 'noteText',
-}
 
 export default class HtmlParser {
   #html: HTMLElement;
