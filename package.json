@@ -2,7 +2,7 @@
   "name": "yakp",
   "version": "0.0.1",
   "description": "Yet Another Kindle Parser",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc",
     "dev": "nodemon ./src/index.ts",
