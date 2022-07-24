@@ -1,5 +1,5 @@
 import { parse, HTMLElement } from 'node-html-parser';
-import { Highlight, KindleNotebook } from '../../models/kindle';
+import { Highlight, KindleNotebook } from '../models/kindle';
 
 enum QuerySelectorsEnum {
   TITLE = 'div.bookTitle',
